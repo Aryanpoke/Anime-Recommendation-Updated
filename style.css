@@ -1,0 +1,663 @@
+/* ========================================
+   HEADER
+======================================== */
+
+.header {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    min-height: 90px;
+
+    padding: 20px 30px;
+
+    background: #000;
+
+}
+
+
+/* ========================================
+   PROFILE LOGO
+======================================== */
+
+.profile-logo {
+
+    width: 48px;
+
+    height: 48px;
+
+    min-width: 48px;
+
+    min-height: 48px;
+
+    max-width: 48px;
+
+    max-height: 48px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background: #ff4d4d;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 21px;
+
+    transition: 0.3s;
+
+    flex-shrink: 0;
+
+}
+
+
+.profile-logo:hover {
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 15px rgba(255, 77, 77, 0.7);
+
+}
+
+
+/* ========================================
+   PROFILE IMAGE
+======================================== */
+
+.profile-logo img {
+
+    width: 48px;
+
+    height: 48px;
+
+    min-width: 48px;
+
+    min-height: 48px;
+
+    max-width: 48px;
+
+    max-height: 48px;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 50%;
+
+    display: none;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+/* ========================================
+   DEFAULT USER ICON
+======================================== */
+
+.profile-logo i {
+
+    display: block;
+
+    margin: 0;
+
+    padding: 0;
+
+    font-size: 21px;
+
+}
+
+
+/* ========================================
+   WHEN IMAGE EXISTS
+======================================== */
+
+.profile-logo.has-image img {
+
+    display: block;
+
+}
+
+
+.profile-logo.has-image i {
+
+    display: none;
+
+}
+
+
+/* ========================================
+   TITLE CENTER
+======================================== */
+
+.title {
+
+    position: absolute;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    text-align: center;
+
+}
+
+
+.title h1 {
+
+    margin: 0;
+
+    font-size: 32px;
+
+}
+
+
+.title p {
+
+    margin: 0;
+
+    font-size: 16px;
+
+    color: #ccc;
+
+}
+
+
+/* ========================================
+   SEARCH RIGHT
+======================================== */
+
+#searchBox {
+
+    margin-left: auto;
+
+    padding: 10px 15px;
+
+    width: 200px;
+
+    border-radius: 5px;
+
+    border: none;
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+
+#searchBox:focus {
+
+    width: 250px;
+
+}
+
+
+/*  BODY */
+
+body{
+
+font-family: Arial;
+
+background:#121212;
+
+color:white;
+
+margin:0;
+
+}
+
+
+/*  BUTTONS */
+
+.controls{
+
+text-align:center;
+
+margin:20px;
+
+}
+
+
+button{
+
+padding:10px 15px;
+
+margin:5px;
+
+border:none;
+
+border-radius:5px;
+
+cursor:pointer;
+
+background:#333;
+
+color:white;
+
+transition:0.3s;
+
+}
+
+
+button:hover{
+
+background:#ff4d4d;
+
+color:white;
+
+}
+
+
+.random{
+
+background:red;
+
+}
+
+
+/*  CARDS */
+
+.container{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+padding:20px;
+
+}
+
+
+.card{
+
+background:#1e1e1e;
+
+width:200px;
+
+border-radius:10px;
+
+overflow:hidden;
+
+transition:0.3s;
+
+}
+
+
+.card:hover{
+
+transform:scale(1.05);
+
+box-shadow: 0 0 20px rgba(255, 77, 77, 0.7);
+
+}
+
+
+.card img{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+}
+
+
+.card h3, .card p{
+
+padding:5px;
+
+text-align:center;
+
+}
+
+
+.card a{
+
+text-decoration:none;
+
+color:white;
+
+display:block;
+
+}
+
+
+/*  DETAIL PAGE */
+
+.detail-container{
+
+display:flex;
+
+padding:20px;
+
+min-height:100vh;
+
+gap:20px;
+
+}
+
+
+.hero{
+
+  height: 300px;
+
+  background-size: cover;
+
+  background-position: center;
+
+  position: relative;
+
+}
+
+
+.hero::after{
+
+  content:"";
+
+  position:absolute;
+
+  top:0;
+
+  left:0;
+
+  width:100%;
+
+  height:100%;
+
+  background:rgba(0,0,0,0.6);
+
+}
+
+
+.hero-content{
+
+  position:absolute;
+
+  bottom:20px;
+
+  left:20px;
+
+  z-index:2;
+
+}
+
+
+.hero-content h1{
+
+  margin:0;
+
+  font-size:35px;
+
+}
+
+
+.hero-content p{
+
+  margin:5px 0;
+
+  font-size:18px;
+
+  color:#ffd700;
+
+}
+
+
+.left{
+
+width:30%;
+
+text-align:center;
+
+}
+
+
+.left img{
+
+width:100%;
+
+border-radius:10px;
+
+cursor:pointer;
+
+}
+
+
+.right{
+
+width:70%;
+
+padding:20px;
+
+}
+
+
+.right h3{
+
+margin-top:20px;
+
+}
+
+
+.anime-heading{
+
+  font-size: 28px;
+
+  font-weight: bold;
+
+  margin-bottom: 20px;
+
+  color: #00d4ff;
+
+  border-left: 5px solid red;
+
+  padding-left: 10px;
+
+}
+
+
+/*  Description Box */
+
+.desc-box{
+
+background:#1e1e1e;
+
+padding:15px;
+
+border-radius:10px;
+
+margin-bottom:20px;
+
+}
+
+
+.desc-box h3{
+
+color:#ff4d4d;
+
+margin-top:0;
+
+}
+
+
+/*  SEASONS */
+
+.season{
+
+background:#1e1e1e;
+
+padding:15px;
+
+margin-bottom:15px;
+
+border-radius:10px;
+
+}
+
+
+.season h4{
+
+color:#00d4ff;
+
+margin-bottom:10px;
+
+}
+
+
+.season li{
+
+margin:5px 0;
+
+}
+
+
+/*  MODAL */
+
+.modal{
+
+display:none;
+
+position:fixed;
+
+z-index:1000;
+
+left:0;
+
+top:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,0.8);
+
+}
+
+
+/* Modal content */
+
+.modal-content{
+
+position:relative;
+
+margin:5% auto;
+
+width:70%;
+
+max-width:800px;
+
+background:black;
+
+padding:10px;
+
+border-radius:10px;
+
+animation: zoomIn 0.3s ease;
+
+}
+
+
+.close{
+
+position:absolute;
+
+top:10px;
+
+right:20px;
+
+color:white;
+
+font-size:30px;
+
+cursor:pointer;
+
+}
+
+
+/* Animation */
+
+@keyframes zoomIn{
+
+from{
+
+transform:scale(0.7);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:1;
+
+}
+
+}
+
+
+/*  RESPONSIVE (VERY IMPORTANT) */
+
+@media (max-width:768px){
+
+.detail-container{
+
+flex-direction:column;
+
+}
+
+.left, .right{
+
+width:100%;
+
+}
+
+.modal-content{
+
+width:90%;
+
+}
+
+.title{
+
+position:static;
+
+transform:none;
+
+text-align:center;
+
+width:100%;
+
+}
+
+#searchBox{
+
+width:100%;
+
+margin-top:10px;
+
+}
+
+}

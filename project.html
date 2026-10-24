@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<title>Anime Recommendation</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+  <!-- Profile Logo -->
+  <a href="profile.html" class="profile-logo" title="My Profile">
+
+    <img
+        id="headerProfilePicture"
+        src=""
+        alt="Profile"
+    >
+
+    <i
+        class="fa-solid fa-user"
+        id="headerDefaultIcon"
+    ></i>
+
+</a>
+
+
+  <!-- Title -->
+  <div class="title">
+
+    <h1>Anime Recommendation</h1>
+
+    <p>Find your next anime to watch</p>
+
+  </div>
+
+
+  <!-- Search -->
+  <input
+    type="text"
+    id="searchBox"
+    placeholder="Search anime..."
+    onkeyup="searchAnime()"
+  >
+
+</header>
+
+<div class="controls">
+<button onclick="filterAnime('all')">All</button>
+<button onclick="filterAnime('action')">Action</button>
+<button onclick="filterAnime('fantasy')">Fantasy</button>
+<button onclick="filterAnime('comedy')">Comedy</button>
+<button onclick="filterAnime('isekai')">Isekai</button>
+<button onclick="filterAnime('horror')">Horror</button>
+<button onclick="filterAnime('romance')">Romance</button>
+
+
+<button class="random" onclick="randomAnime()">Recommend Me</button>
+</div>
+
+<div class="container" id="animeContainer">
+
+<!-- Attack on Titan -->
+<div class="card action">
+<a href="anime.html?name=Attack on Titan">
+<img src="attack-on-titan.jpg" alt="Attack on Titan">
+<h3>Attack on Titan</h3>
+<p>Genre: Action</p>
+</a>
+</div>
+
+<!-- Demon Slayer -->
+<div class="card fantasy">
+<a href="anime.html?name=Demon Slayer">
+<img src="demon-slayer.jpg" alt="Demon Slayer">
+<h3>Demon Slayer</h3>
+<p>Genre: Fantasy</p>
+</a>
+</div>
+
+<!-- Grand Blue -->
+<div class="card comedy">
+<a href="anime.html?name=Grand Blue">
+<img src="grand-blue.jpg" alt="Grand Blue">
+<h3>Grand Blue</h3>
+<p>Genre: Comedy</p>
+</a>
+</div>
+
+<!-- Naruto Shippuden -->
+<div class="card action">
+<a href="anime.html?name=Naruto Shippuden">
+<img src="naruto-shippuden.jpg" alt="Naruto Shippuden">
+<h3>Naruto Shippuden</h3>
+<p>Genre: Action</p>
+</a>
+</div>
+
+<!-- Re:Monster -->
+<div class="card isekai">
+<a href="anime.html?name=Re:Monster">
+<img src="remonster.jpg" alt="Re:Monster">
+<h3>Re:Monster</h3>
+<p>Genre: Isekai</p>
+</a>
+</div>
+
+<!-- Yamishibai -->
+<div class="card horror">
+<a href="anime.html?name=Yamishibai">
+<img src="season-15.jpg" alt="Yamishibai">
+<h3>Yamishibai</h3>
+<p>Genre: Horror</p>
+</a>
+</div>
+
+<!-- Your Name -->
+<div class="card romance">
+<a href="anime.html?name=Your Name">
+<img src="your-name.jpg" alt="Your Name">
+<h3>Your Name</h3>
+<p>Genre: Romance</p>
+</a>
+</div>
+
+<!-- Jujutsu Kaisen: Execution -->
+<div class="card action">
+<a href="anime.html?name=Jujutsu Kaisen: Execution">
+<img src="jujustu.jpg" alt="Jujutsu Kaisen: Execution">
+<h3>Jujutsu Kaisen: Execution</h3>
+<p>Genre: Action</p>
+</a>
+</div>
+
+<!-- One Piece Film Red -->
+<div class="card action">
+<a href="anime.html?name=One Piece Film Red">
+<img src="onepiecered.jpg" alt="One Piece Film Red">
+<h3>One Piece Movie Red</h3>
+<p>Genre: Action</p>
+</a>
+</div>
+
+<!-- I Want to Eat Your Pancreas -->
+<div class="card romance">
+<a href="anime.html?name=I Want to Eat Your Pancreas">
+<img src="iwantto.jpg" alt="I Want to Eat Your Pancreas">
+<h3>I Want to Eat Your Pancreas</h3>
+<p>Genre: Romance</p>
+</a>
+</div>
+
+<!-- Dad Is a Hero, Mom Is a Spirit, I'm a Reincarnator  -->
+<div class="card isekai">
+<a href="anime.html?name=Dad Is a Hero, Mom Is a Spirit, I'm a Reincarnator">
+<img src="dadishero.jpg" alt="Dad Is a Hero, Mom Is a Spirit, I'm a Reincarnator">
+<h3>Dad Is a Hero, Mom Is a Spirit, I'm a Reincarnator</h3>
+<p>Genre: Isekai</p>
+</a>
+</div>
+
+<!-- Dragon Ball Movie Broly -->
+<div class="card action">
+<a href="anime.html?name=Dragon Ball Movie Broly">
+<img src="dragonball.jpg" alt="Dragon Ball Movie Broly">
+<h3>Dragon Ball Movie Broly</h3>
+<p>Genre: Action</p>
+</a>
+</div>
+
+<script src="animeData.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

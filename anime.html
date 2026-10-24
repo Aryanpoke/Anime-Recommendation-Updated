@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Anime Details</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 🔙 Back Button -->
+<div style="padding:10px;">
+<button onclick="goBack()">⬅ Back</button>
+</div>
+
+<!-- // for background blur picture// -->
+<div class="hero" id="heroBanner">
+  <div class="hero-content">
+    <h1 id="animeTitleHero"></h1>
+    <p>⭐ <span id="animeRatingHero"></span></p>
+  </div>
+</div>
+<div class="detail-container">
+
+<!-- LEFT SIDE -->
+<div class="left">
+<img id="animeImg" onclick="openTrailer()" style="cursor:pointer;">
+<h2 id="animeTitle"></h2>
+<p><b>Rating:</b> <span id="animeRating"></span></p>
+
+<button onclick="openTrailer()">▶ Watch Trailer</button>
+</div>
+
+<!-- RIGHT SIDE -->
+<div class="right">
+
+<h2 class="anime-heading">Anime Details</h2>
+
+<div class="desc-box">
+  <h3>Description</h3>
+  <p id="animeDesc"></p>
+</div>
+
+<p><b>Tags:</b> <span id="animeTags"></span></p>
+
+<h3>Episodes</h3>
+<div id="seasonContainer"></div>
+
+</div>
+
+</div>
+
+<script src="animeData.js"></script>
+<script src="anime.js"></script>
+
+<script>
+function goBack(){
+  window.history.back();
+}
+</script>
+
+</body>
+</html>

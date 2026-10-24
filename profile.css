@@ -1,0 +1,786 @@
+```css
+/* ========================================
+   RESET
+======================================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+/* ========================================
+   BODY
+======================================== */
+
+body {
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #252525,
+            #121212 60%
+        );
+
+    color: white;
+
+}
+
+
+/* ========================================
+   MAIN CONTAINER
+======================================== */
+
+.profile-container {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.profile-header {
+
+    min-height: 85px;
+
+    padding: 20px 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: #000;
+
+    border-bottom: 1px solid #2d2d2d;
+
+}
+
+
+.profile-header h1 {
+
+    font-size: 28px;
+
+}
+
+
+/* ========================================
+   BACK HOME
+======================================== */
+
+.back-home {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+
+}
+
+
+.back-home i {
+
+    margin-right: 8px;
+
+    color: #ff4d4d;
+
+}
+
+
+.back-home:hover {
+
+    color: #ff4d4d;
+
+}
+
+
+/* ========================================
+   LOGOUT BUTTON
+======================================== */
+
+.logout-btn {
+
+    padding: 10px 18px;
+
+    border: 1px solid #ff4d4d;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #ff4d4d;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+
+}
+
+
+.logout-btn i {
+
+    margin-right: 7px;
+
+}
+
+
+.logout-btn:hover {
+
+    background: #ff4d4d;
+
+    color: white;
+
+}
+
+
+/* ========================================
+   PROFILE CONTENT
+======================================== */
+
+.profile-content {
+
+    width: 90%;
+
+    max-width: 1050px;
+
+    margin: 50px auto;
+
+    display: grid;
+
+    grid-template-columns: 320px 1fr;
+
+    gap: 50px;
+
+}
+
+
+/* ========================================
+   PROFILE PICTURE SECTION
+======================================== */
+
+.profile-picture-section {
+
+    padding: 35px 20px;
+
+    text-align: center;
+
+    background: #1b1b1b;
+
+    border-radius: 18px;
+
+    border: 1px solid #292929;
+
+    height: fit-content;
+
+}
+
+
+/* ========================================
+   PROFILE PICTURE WRAPPER
+======================================== */
+
+.profile-picture-wrapper {
+
+    width: 180px;
+
+    height: 180px;
+
+    margin: 0 auto 20px;
+
+    position: relative;
+
+}
+
+
+/* ========================================
+   PROFILE PICTURE
+======================================== */
+
+.profile-picture {
+
+    width: 180px;
+
+    height: 180px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #333,
+            #111
+        );
+
+    border: 5px solid #ff4d4d;
+
+    color: #777;
+
+    font-size: 75px;
+
+}
+
+
+.profile-picture img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* ========================================
+   CAMERA BUTTON
+======================================== */
+
+.camera-btn {
+
+    position: absolute;
+
+    right: 5px;
+
+    bottom: 5px;
+
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    border: 4px solid #1b1b1b;
+
+    background: #ff4d4d;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+
+}
+
+
+.camera-btn:hover {
+
+    background: #ff2222;
+
+    transform: scale(1.08);
+
+}
+
+
+/* ========================================
+   USERNAME
+======================================== */
+
+.profile-picture-section h2 {
+
+    margin-top: 10px;
+
+    font-size: 24px;
+
+}
+
+
+.profile-role {
+
+    margin-top: 8px;
+
+    color: #999;
+
+    font-size: 14px;
+
+}
+
+
+/* ========================================
+   CHANGE PHOTO
+======================================== */
+
+.change-photo {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    background: #292929;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+
+}
+
+
+.change-photo:hover {
+
+    background: #ff4d4d;
+
+}
+
+
+/* ========================================
+   PROFILE DETAILS
+======================================== */
+
+.profile-details {
+
+    padding: 35px;
+
+    background: #1b1b1b;
+
+    border-radius: 18px;
+
+    border: 1px solid #292929;
+
+}
+
+
+/* ========================================
+   SECTION TITLE
+======================================== */
+
+.section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.section-title i {
+
+    color: #ff4d4d;
+
+    font-size: 22px;
+
+}
+
+
+.section-title h2 {
+
+    font-size: 24px;
+
+}
+
+
+/* ========================================
+   INPUT GROUP
+======================================== */
+
+.input-group {
+
+    margin-bottom: 22px;
+
+}
+
+
+.input-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #ddd;
+
+    font-size: 14px;
+
+}
+
+
+/* ========================================
+   INPUT WRAPPER
+======================================== */
+
+.input-wrapper {
+
+    display: flex;
+
+    align-items: center;
+
+    height: 50px;
+
+    padding: 0 15px;
+
+    background: #111;
+
+    border: 1px solid #333;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+
+}
+
+
+.input-wrapper:focus-within {
+
+    border-color: #ff4d4d;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 77, 77, 0.1);
+
+}
+
+
+.input-wrapper i {
+
+    color: #ff4d4d;
+
+    margin-right: 12px;
+
+}
+
+
+.input-wrapper input {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 15px;
+
+}
+
+
+/* ========================================
+   DISABLED USERNAME
+======================================== */
+
+.input-wrapper.disabled {
+
+    background: #181818;
+
+}
+
+
+.input-wrapper.disabled input {
+
+    color: #888;
+
+    cursor: not-allowed;
+
+}
+
+
+.input-group small {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #777;
+
+    font-size: 12px;
+
+}
+
+
+/* ========================================
+   CHANGE EMAIL
+======================================== */
+
+.email-change-btn {
+
+    padding: 9px 15px;
+
+    border: 1px solid #555;
+
+    border-radius: 7px;
+
+    background: transparent;
+
+    color: #ddd;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.email-change-btn:hover {
+
+    border-color: #ff4d4d;
+
+    color: #ff4d4d;
+
+}
+
+
+/* ========================================
+   MESSAGE
+======================================== */
+
+.profile-message {
+
+    min-height: 22px;
+
+    margin-top: 15px;
+
+    color: #4ade80;
+
+    font-size: 14px;
+
+}
+
+
+/* ========================================
+   SAVE BUTTON
+======================================== */
+
+.save-btn {
+
+    width: 100%;
+
+    height: 52px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #ff4d4d;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.save-btn:hover {
+
+    background: #ff2222;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(255, 77, 77, 0.25);
+
+}
+
+
+/* ========================================
+   DANGER ZONE
+======================================== */
+
+.danger-zone {
+
+    margin-top: 35px;
+
+    padding: 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border: 1px solid #522;
+
+    border-radius: 10px;
+
+    background: #211414;
+
+}
+
+
+.danger-zone h3 {
+
+    margin-bottom: 7px;
+
+    color: #ff6666;
+
+    font-size: 16px;
+
+}
+
+
+.danger-zone h3 i {
+
+    margin-right: 7px;
+
+}
+
+
+.danger-zone p {
+
+    color: #999;
+
+    font-size: 12px;
+
+}
+
+
+/* ========================================
+   DELETE BUTTON
+======================================== */
+
+.delete-btn {
+
+    padding: 10px 15px;
+
+    border: 1px solid #dc2626;
+
+    border-radius: 7px;
+
+    background: transparent;
+
+    color: #ef4444;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.delete-btn:hover {
+
+    background: #dc2626;
+
+    color: white;
+
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 800px) {
+
+    .profile-header {
+
+        padding: 18px 20px;
+
+    }
+
+
+    .profile-header h1 {
+
+        font-size: 22px;
+
+    }
+
+
+    .profile-content {
+
+        grid-template-columns: 1fr;
+
+        width: 92%;
+
+        gap: 25px;
+
+    }
+
+
+    .profile-picture-section {
+
+        width: 100%;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .profile-header {
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+
+        justify-content: center;
+
+    }
+
+
+    .profile-details {
+
+        padding: 22px;
+
+    }
+
+
+    .danger-zone {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .delete-btn {
+
+        width: 100%;
+
+    }
+
+}
+```
